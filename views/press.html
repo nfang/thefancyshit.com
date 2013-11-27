@@ -1,0 +1,43 @@
+<div class="centered-container">
+  <div class="banner"><img src="/images/press-banner.jpg" alt="" /></div>
+  <h2 class="page-header">PRESS</h2>
+  <div class="section sidebar">
+    <div class="sidebar-part">
+      <div class="sidebar-header">CATEGORIES</div>
+      <ul class="sidebar-list">
+        <li><a href="/press/magazine">MAGAZINE</a></li>
+        <li><a href="/press/web">WEB</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-part">
+      <div class="sidebar-header">ARCHIVES</div>
+      <ul class="sidebar-list">
+        <li>
+          <a href="/press/2013/03">MARCH 2013</a>
+        </li>
+        <li>
+          <a href="/press/2013/01">JANUARY 2013</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="section postlist">
+    {{# posts}}
+    <div class="post">
+      <div class="post-header">
+        <span class="post-type">{{type}}</span><span>{{title}}</span>
+      </div>
+      <div class="post-content">{{{content}}}</div>
+      <div class="post-footer">
+        <div class="inquiry">For any inquiries regarding the products, please contact us at 
+          <a href="mailto:AVIVI.WANG@GMAIL.COM">AVIVI.WANG@GMAIL.COM</a>
+        </div>
+        <div class="post-meta">
+          <span class="post-date">{{date}}</span>
+          <span>Press Info</span>
+        </div>
+      </div>
+    </div>
+    {{/ posts}}
+  </div>
+</div>
