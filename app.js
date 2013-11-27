@@ -14,11 +14,11 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.compress());
 
 app.get("/", function (req, res) {
-  res.render("index");
+  res.render("index", { title : "Fancy Sh!t" });
 });
 
 app.get("/about", function (req, res) {
-  res.render("about");
+  res.render("about", { title : "About Us - Fancy Sh!t" });
 });
 
 app.get("/press/:year/:month", function (req, res) {
@@ -29,7 +29,8 @@ app.get("/press/:year/:month", function (req, res) {
     posts : _.filter(db.posts, function (post) {
       return post.date.slice(0, 4) === year && 
              post.date.slice(5, 7) === month;
-    })
+    }),
+    title : "Press - Fancy Sh!t"
   });
 });
 
@@ -40,7 +41,8 @@ app.get("/press/:type", function (req, res) {
     res.render("press", { 
       posts : _.filter(db.posts, function (post) {
         return post.type === 'WEB';
-      })
+      }),
+      title : "Press - Fancy Sh!t"
     });
   }
 
@@ -48,20 +50,21 @@ app.get("/press/:type", function (req, res) {
     res.render("press", { 
       posts : _.filter(db.posts, function (post) {
         return post.type === 'MAGAZINE';
-      }) 
+      }),
+      title : "Press - Fancy Sh!t"
     });
   }
 });
 
 app.get("/press", function (req, res) {
-  res.render("press", { posts : db.posts });
+  res.render("press", { posts : db.posts, title : "Press - Fancy Sh!t" });
 });
 
 app.get("/collection/:year/:season", function (req, res) {
   var year = req.params.year
     , season = req.params.season;
 
-  res.render("collection", { looks : db.lookbook[year][season] });
+  res.render("collection", { looks : db.lookbook[year][season], title : "Collection - Fancy Sh!t" });
 })
 
 app.listen(3000);
