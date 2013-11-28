@@ -3,6 +3,12 @@ var express = require("express")
   , app = express()
   , db = require("./db.js");
 
+var getPageTitle = function (page) {
+  if (!page || page.length === 0) return "Fancy Sh!t";
+
+  return page + " - Fancy Sh!t";
+}
+
 app.engine(".html", require("hogan-express"));
 
 app.set("views", __dirname + "/views");
@@ -14,11 +20,11 @@ app.use(express.compress());
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", function (req, res) {
-  res.render("index", { title : "Fancy Sh!t" });
+  res.render("index", { title : getPageTitle() });
 });
 
 app.get("/about", function (req, res) {
-  res.render("about", { title : "About Us - Fancy Sh!t" });
+  res.render("about", { title : getPageTitle("About Us") });
 });
 
 app.get("/press/:year/:month", function (req, res) {
@@ -30,7 +36,7 @@ app.get("/press/:year/:month", function (req, res) {
       return post.date.slice(0, 4) === year && 
              post.date.slice(5, 7) === month;
     }),
-    title : "Press - Fancy Sh!t"
+    title : getPageTitle("Press")
   });
 });
 
@@ -42,7 +48,7 @@ app.get("/press/:type", function (req, res) {
       posts : _.filter(db.posts, function (post) {
         return post.type === 'WEB';
       }),
-      title : "Press - Fancy Sh!t"
+      title : getPageTitle("Press")
     });
   }
 
@@ -51,20 +57,20 @@ app.get("/press/:type", function (req, res) {
       posts : _.filter(db.posts, function (post) {
         return post.type === 'MAGAZINE';
       }),
-      title : "Press - Fancy Sh!t"
+      title : getPageTitle("Press")
     });
   }
 });
 
 app.get("/press", function (req, res) {
-  res.render("press", { posts : db.posts, title : "Press - Fancy Sh!t" });
+  res.render("press", { posts : db.posts, title : getPageTitle("Press") });
 });
 
 app.get("/collection/:year/:season", function (req, res) {
   var year = req.params.year
     , season = req.params.season;
 
-  res.render("collection", { looks : db.lookbook[year][season], title : "Collection - Fancy Sh!t" });
+  res.render("collection", { looks : db.lookbook[year][season], title : getPageTitle("Collection") });
 })
 
 app.listen(3000);
