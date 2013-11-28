@@ -1,0 +1,588 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"static",
+				"staticfiles_urlpatterns"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"ng-ch",
+				"ng-checked	AngularJS"
+			],
+			[
+				"font-l",
+				"font-family"
+			],
+			[
+				"lists",
+				"list-style-type"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"backgron",
+				"background-image"
+			],
+			[
+				"alert",
+				"alertSuccess"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"submit",
+				"submit-button"
+			],
+			[
+				"saved",
+				"savedComparisonPopup"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"chzn",
+				"chzn-container"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"indi",
+				"indicators"
+			],
+			[
+				"next",
+				"nextIndex"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"transi",
+				"transitionSettings"
+			],
+			[
+				"ne",
+				"nextIndex"
+			],
+			[
+				"auto",
+				"autoScrollInterval"
+			],
+			[
+				"tran",
+				"transitionSettings"
+			],
+			[
+				"au",
+				"autoScrollInterval"
+			],
+			[
+				"pre",
+				"prevElementIndex"
+			],
+			[
+				"active",
+				"activeElementIndex"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"base",
+				"baseLineHeight"
+			],
+			[
+				"back",
+				"backHeight"
+			],
+			[
+				"text",
+				"text-align"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 1786,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: remo	",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/nfang/Github/jquery/README.md",
+		"/Users/nfang/Github/thefancyshit.com/.gitignore",
+		"/Users/nfang/Github/thefancyshit.com/public/stylesheets/main.css",
+		"/Users/nfang/Github/thefancyshit.com/views/layout.html",
+		"/Users/nfang/Github/thefancyshit.com/views/press.html",
+		"/Users/nfang/Github/thefancyshit.com/views/index.html",
+		"/Users/nfang/Github/thefancyshit.com/db.js",
+		"/Users/nfang/Github/thefancyshit.com/package.json",
+		"/Users/nfang/Github/thefancyshit.com/views/collection.html",
+		"/Users/nfang/Github/thefancyshit.com/public/scripts/main.js",
+		"/Users/nfang/Github/thefancyshit.com/public/scripts/slider.js",
+		"/Users/nfang/Github/thefancyshit.com/views/about.html",
+		"/Users/nfang/Github/fancyshit/collection/2012-winter.html",
+		"/Users/nfang/Github/fancyshit/collection/2012-autumn.html",
+		"/Users/nfang/Github/fancyshit/about.html",
+		"/Users/nfang/Github/thefancyshit.com/views/partials/footer.html",
+		"/Users/nfang/Github/thefancyshit.com/views/header.html",
+		"/Users/nfang/Github/thefancyshit.com/views/footer.html",
+		"/Users/nfang/Github/thefancyshit.com/app.js",
+		"/Users/nfang/Github/fancyshit/index.html",
+		"/Users/nfang/Github/fancyshit/scripts/main.js",
+		"/Users/nfang/Documents/TIMEMACHINE BACKUP/Documents/One/photo/link.txt",
+		"/Users/nfang/Music/Lossless/陈绮贞 - Cheer 精选1998-2005 (APE)/CDImage.cue",
+		"/Users/nfang/Desktop/______ - ________________.__________(APE)/CDImage.cue",
+		"/Users/nfang/Dropbox/Magarita/core.js",
+		"/Users/nfang/Github/class-rosters/django/backend/settings.py",
+		"/Users/nfang/Github/class-rosters/django/backend/wsgi.py",
+		"/Users/nfang/Github/class-rosters/README.md",
+		"/Users/nfang/Github/class-rosters/django/locale/zh_CN/LC_MESSAGES/django.po",
+		"/Users/nfang/Github/class-rosters/js/main.js",
+		"/Users/nfang/Github/class-rosters/backend/web/views.py",
+		"/Users/nfang/Github/class-rosters/backend/locale/en/LC_MESSAGES/django.po",
+		"/Users/nfang/Github/class-rosters/backend/locale/zh_CN/LC_MESSAGES/django.po",
+		"/Users/nfang/Github/class-rosters/backend/web/templates/web/index.html",
+		"/Users/nfang/Github/class-rosters/backend/backend/settings.py",
+		"/Users/nfang/Github/class-rosters/index.html",
+		"/Users/nfang/Github/class-rosters/css/custom.css",
+		"/Users/nfang/Github/class-rosters/backend/api/views.py",
+		"/Users/nfang/Github/class-rosters/backend/backend/urls.py",
+		"/Users/nfang/Github/class-rosters/backend/web/urls.py",
+		"/Users/nfang/Github/class-rosters/frontend/classRoster/views.py",
+		"/Users/nfang/Github/class-rosters/frontend/frontend/settings.py",
+		"/Users/nfang/Github/class-rosters/backend/classRoster/views.py",
+		"/Users/nfang/Github/class-rosters/backend/classRoster/template/classRoster/index.html",
+		"/Users/nfang/Github/class-rosters/backend/classRoster/templates/classRoster/index.html",
+		"/Users/nfang/Github/class-rosters/frontend/frontend/urls.py",
+		"/Users/nfang/Github/class-rosters/frontend/manage.py",
+		"/Users/nfang/Github/class-rosters/css/fontello.css",
+		"/Users/nfang/Desktop/Frontend/garbage.html",
+		"/Users/nfang/Desktop/seedlink/js/angular-resource.min.js",
+		"/Users/nfang/Desktop/seedlink/index.html",
+		"/Users/nfang/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/nfang/Desktop/AngularJS/core.js",
+		"/Users/nfang/Desktop/AngularJS/HackerNews.html",
+		"/Users/nfang/Desktop/AngularJS/AngularJS-101.html",
+		"/Users/nfang/Desktop/AngularJS/angular101.js",
+		"/Users/nfang/Desktop/js-inheritence.js",
+		"/Users/nfang/Github/resume/back.html",
+		"/Users/nfang/Github/resume/index.html",
+		"/Users/nfang/Dropbox/Work/Thoughts.txt",
+		"/Users/nfang/Dropbox/Work/general.interview.dotnet.txt",
+		"/Users/nfang/Documents/TIMEMACHINE BACKUP/Documents/One/text.txt",
+		"/Users/nfang/Documents/TIMEMACHINE BACKUP/Documents/One/article/resc.txt",
+		"/Users/nfang/Documents/TIMEMACHINE BACKUP/Documents/One/article/chat.txt",
+		"/Users/nfang/Documents/TIMEMACHINE BACKUP/Documents/text.txt",
+		"/Users/nfang/Desktop/pci.statistics.sql",
+		"/Users/nfang/Downloads/GirlsOutWest.13.09.11.Miley.Doing.The.Dishes.XXX.1080p.MP4-YAPG[rarbg]/RARBG.com.txt",
+		"/Users/nfang/Desktop/typeahead.js",
+		"/Users/nfang/Desktop/test.typeahead.html",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Web/Scripts/core.js",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Web/CompanyComparison.aspx",
+		"/Users/nfang/Downloads/Adobe.Acrobat.X.Pro.v10.0.Multilingual.MacOSX.Incl.Keymaker-CORE/README.txt",
+		"/Users/nfang/Downloads/Adobe.Acrobat.X.Pro.v10.0.Multilingual.MacOSX.Incl.Keymaker-CORE/core.nfo",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Core/Export/PdfExport.cs",
+		"/Users/nfang/Github/policycomparison.com-ui/images/LOADING.gif",
+		"/Users/nfang/Dropbox/Work/mail.txt",
+		"/Users/nfang/Github/policycomparison.com-ui/less/common.less",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Core/nuget/content/app.config.transform",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Core/nuget/content/web.config.transform",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Core/nuget/readme.txt",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Core/PolCompare.Core.nuspec",
+		"/Users/nfang/Github/policycomparison.com-site/PolCompare.Core/packages.config",
+		"/Users/nfang/Desktop/CSS positioning.txt",
+		"/Users/nfang/Downloads/WinZip.Mac.v2.0.1200.MacOSX.Incl.Keymaker-CORE/setup/CORE.NFO",
+		"/Users/nfang/Github/policycomparison.com-ui/index.html",
+		"/Users/nfang/Github/policycomparison.com-ui/error.html",
+		"/Users/nfang/Music/Lossless/蟲音/虫师原声集1-蟲音 前/Mushishi Soundtrack daiichidan ''Mushinone'' Part.1.cue",
+		"/Users/nfang/Github/policycomparison.com-ui/comparison.html",
+		"/Users/nfang/Github/policycomparison.com-ui/scripts/core.js",
+		"/Users/nfang/Github/policycomparison.com-ui/disclaimer.html",
+		"/Users/nfang/Github/policycomparison.com-ui/less/pages/comparison.less",
+		"/Users/nfang/Github/policycomparison.com-ui/less/variables.less",
+		"/Users/nfang/Github/policycomparison.com-ui/layout.less",
+		"/Users/nfang/Github/policycomparison.com-ui/shiv.js",
+		"/Users/nfang/Github/policycomparison.com-ui/sample/disclaimer.html",
+		"/Users/nfang/Github/policycomparison.com-ui/base.less",
+		"/Users/nfang/Github/policycomparison.com-ui/ext/chosen/chosen.jquery.js",
+		"/Users/nfang/Github/policycomparison.com-ui/ext/chosen/chosen.css",
+		"/C/Users/Nathan.Fang/Desktop/PCI Data Dump/pci_script.sql",
+		"/Users/nfang/Github/policycomparison.com-ui/patterns.less",
+		"/Users/nfang/Github/policycomparison.com-ui/text.less",
+		"/Users/nfang/Github/policycomparison.com-ui/variables.less",
+		"/Users/nfang/Github/policycomparison.com-ui/core.js",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/core.less",
+		"/C/Users/Nathan.Fang/AppData/Local/Temp/Rar$DI46.664/html5shiv.js",
+		"/C/Users/Nathan.Fang/AppData/Local/Temp/Rar$DI85.664/html5shiv.js",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/build/base.css",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/piece.js",
+		"/C/( My Documents )/Websites/PolicyComparison/PolComparison/JScript/vendor/chosen.jquery.js",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/layout.less",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/components.less",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/base.less",
+		"/C/Users/Nathan.Fang/Dropbox/Work/carousel.js",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/sample/home.html",
+		"/C/Users/Nathan.Fang/Desktop/pci_v21_frontend/mixins.less",
+		"/Users/nfang/Desktop/PCI_V2.1_Frontend/effects.less",
+		"/Users/nfang/Desktop/PCI_V2.1_Frontend/components.less",
+		"/Users/nfang/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/nfang/Github/policycomparison.com-ui/less"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"megrim",
+			"find",
+			"./images",
+			"\"",
+			"prevItem",
+			"nextItem",
+			"container",
+			"prevTrigger",
+			"active",
+			"2012",
+			"winter",
+			"JPG",
+			"autumn",
+			"jpg",
+			"Autumn",
+			"looks",
+			"-",
+			"./collection",
+			"styles",
+			"onclick",
+			"陈绮贞",
+			"³Âç²Õê",
+			"Present",
+			"</p>",
+			"</span>",
+			"</strong>",
+			"<strong style=\"COLOR: #ff00ff\">",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21.75pt\">",
+			"<span lang=\"EN-US\"><o:p>&nbsp;</o:p>",
+			"<span style=\"COLOR: #0000ff\">",
+			"<strong style=\"mso-bidi-font-weight: normal\"><span style=\"COLOR: fuchsia\">",
+			"<span lang=\"EN-US\"><span style=\"mso-spacerun: yes\">&nbsp;</span>",
+			"<span lang=\"EN-US\"><span style=\"mso-spacerun: yes\">&nbsp;</span>\n　　<strong style=\"mso-bidi-font-weight: normal\"><span style=\"COLOR: fuchsia\">",
+			"<span style=\"COLOR: #0000ff; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'\">",
+			"<span lang=\"EN-US\" style=\"COLOR: fuchsia\">",
+			"</span><strong style=\"mso-bidi-font-weight: normal\">",
+			"<span style=\"FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'\">",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt\">",
+			"</span></strong>",
+			"<strong style=\"mso-bidi-font-weight: normal\"><span style=\"COLOR: fuchsia; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'\">",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21pt\">",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt; TEXT-INDENT: 21pt\"><span lang=\"EN-US\"><span style=\"mso-spacerun: yes\">&nbsp;</span>",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt; TEXT-ALIGN: center\" align=\"center\">",
+			"</span></p>",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt\"><span style=\"FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'\">　<strong style=\"mso-bidi-font-weight: normal\"><span style=\"COLOR: fuchsia\">　</span></strong></span><strong style=\"mso-bidi-font-weight: normal\"><span lang=\"EN-US\" style=\"COLOR: fuchsia\">5.</span></strong><strong style=\"mso-bidi-font-weight: normal\"><span style=\"COLOR: fuchsia; FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'\">",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt\">　　<span style=\"COLOR: #0000ff\">",
+			"<p class=\"MsoNormal\" style=\"MARGIN: 0cm 0cm 0pt\"><span lang=\"EN-US\"><o:p>&nbsp;</o:p></span></p>",
+			"Languages",
+			"location",
+			"locale",
+			"js/",
+			"Template",
+			"static/",
+			"STATIC",
+			"CONTEXT",
+			"/s",
+			"js/",
+			"/static/",
+			" %}\"",
+			" static \"",
+			"STATIC",
+			"Port",
+			"777",
+			"{\n",
+			"font/",
+			"font",
+			".roster > ",
+			"people",
+			"person",
+			"people",
+			"rosters",
+			"roster",
+			"rosters",
+			"roster",
+			"rosters",
+			"roster",
+			"site",
+			"header",
+			"<li>",
+			"ul",
+			"div",
+			"}#",
+			"#{",
+			"}}",
+			"{{",
+			"avatar_small",
+			"90px",
+			"cls",
+			"32px",
+			"5px",
+			"        \n",
+			"<div class=\"roster-type\"></div>",
+			" roster-teacher",
+			"div",
+			"h3",
+			"friend",
+			"ng101App",
+			"regexp",
+			"<li>",
+			"    ",
+			"filter-options",
+			"loading",
+			"darken",
+			"m",
+			"instance",
+			"modal",
+			";\n",
+			"popup",
+			"10",
+			"button",
+			"policy",
+			"forgot",
+			"modal",
+			"@resultContainer_InnerWidth",
+			"modal",
+			"saved-comparisons",
+			"scrollTop",
+			"scroll",
+			"offset",
+			"();\n",
+			"p>",
+			"p",
+			"header",
+			"span",
+			"this.",
+			"placeholder",
+			"35px",
+			"// shouldn't be here"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 75.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 146.0
+	},
+	"project": "thefancyshit.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
