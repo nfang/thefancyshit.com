@@ -1,13 +1,16 @@
 @font-face {
   font-family: 'FuturaLight';
-  src: url('/stylesheets/fonts/FuturaLT-Light.eot');
-  src: url('/stylesheets/fonts/FuturaLT-Light.woff') format('woff'), url('/stylesheets/fonts/FuturaLT-Light.ttf') format('truetype');
+  src: url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.eot');
+  src: url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.woff') format('woff'), 
+       url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'FuturaBook';
-  src: url('/stylesheets/fonts/FuturaLT-Book.ttf');
+  src: url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.eot');
+  src: url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.woff') format('woff'), 
+       url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
