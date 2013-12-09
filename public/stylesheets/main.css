@@ -110,7 +110,8 @@ ul.nav > li:hover > .sub {
   display: block;
 }
 .sub > li:hover > .sub {
-  display: block; 
+  display: block;
+  left: 25px;
 }
 .coll-year, .coll-season {
   width: 100px;
