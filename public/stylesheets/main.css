@@ -13,7 +13,8 @@
 }
 @font-face {
   font-family: 'Megrim';
-  src: url('/stylesheets/fonts/Megrim/Megrim.ttf');
+  src: url('/stylesheets/fonts/Megrim/Megrim.eot');
+  src: url('/stylesheets/fonts/Megrim/Megrim.woff') format('woff'), url('/stylesheets/fonts/Megrim/Megrim.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -59,13 +60,20 @@ ul {
   margin: 0;
   padding: 0;
 }
+.container, .centered-container {
+  position: relative;
+  *z-index: 5;
+}
 ul.nav {
   font: normal normal 1.3em/2em FuturaLight, Helvetica, sans-serif;
   margin: 1em auto 1.8em auto;
+  *margin-bottom: 1em;
   padding-left: 0;
   padding-bottom: 1em;
+  *padding-bottom: 0;
   position: relative;
   width: 960px;
+  *z-index: 10;
 }
 ul.nav > li {
   color: #000000;
@@ -81,19 +89,20 @@ ul.nav > li {
   text-align: center;
   text-transform: capitalize;
 }
-ul.nav > li.first {
+ul.nav > li:first-child {
   text-align: left;
 }
-ul.nav > li.last {
+ul.nav > li:last-child {
   text-align: right;
 }
-ul.nav > li.last > a {
+ul.nav > li:last-child > a {
   margin-right: 1em;
 }
 .sub {
   background-color: #fdfdfd;
   display: none;
   opacity: .95;
+  filter:alpha(opacity=95);
   position: absolute;
   z-index: 2000;
 }
@@ -139,7 +148,6 @@ ul.nav > li:hover > .sub {
   text-decoration: underline;
 }
 .container {
-  position: relative;
   color: #616161;
   height: 560px;
   overflow: hidden;
@@ -186,9 +194,11 @@ ul.nav > li:hover > .sub {
 #carousel > li {
   float: left;
   opacity: .15;
+  filter:alpha(opacity=15);
 }
 #carousel > li.active {
   opacity: 1;
+  filter:alpha(opacity=100);
 }
 .slide-nav {
   cursor: pointer;
@@ -199,6 +209,7 @@ ul.nav > li:hover > .sub {
   line-height: 480px;
   width: 120px;
   opacity: .15;
+  filter:alpha(opacity=15);
   text-align: center;
   z-index: 1000;
 }
