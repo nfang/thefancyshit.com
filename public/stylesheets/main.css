@@ -204,10 +204,10 @@ ul.nav > li:hover > .sub {
 .slide-nav {
   cursor: pointer;
   display: block;
-  font: normal normal 48px/480px Megrim, cursive;
+  font: normal normal 48px/560px Megrim, cursive;
   position: absolute;
-  height: 480px;
-  line-height: 480px;
+  height: 560px;
+  line-height: 560px;
   width: 120px;
   opacity: .15;
   filter:alpha(opacity=15);
