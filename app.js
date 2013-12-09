@@ -1,7 +1,8 @@
 var express = require("express")
   , _ = require("underscore")
   , app = express()
-  , db = require("./db.js");
+  , db = require("./db.js")
+  , port = process.argv[2] || 3000;
 
 var getPageTitle = function (page) {
   if (!page || page.length === 0) return "Fancy Sh!t";
@@ -73,5 +74,6 @@ app.get("/collection/:year/:season", function (req, res) {
   res.render("collection", { looks : db.lookbook[year][season], title : getPageTitle("Collection") });
 })
 
-app.listen(3000);
-console.log("Listening on port 3000");
+app.listen(port);
+
+console.log("Listening on port " + port);
