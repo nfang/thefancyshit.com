@@ -114,7 +114,8 @@ ul.nav > li:hover > .sub {
 }
 .sub > li:hover > .sub {
   display: block;
-  left: 25px;
+  left: 100px;
+  top: 0px;
 }
 .coll-year, .coll-season {
   width: 100px;
@@ -123,6 +124,7 @@ ul.nav > li:hover > .sub {
   border-bottom: 1px dotted #666666;
   line-height: 3em;
   padding: 0 1em;
+  position: relative;
 }
 .container img {
   border: 1px solid #aaaaaa;
