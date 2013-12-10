@@ -2,6 +2,7 @@ var express = require("express")
   , _ = require("underscore")
   , app = express()
   , db = require("./db.js")
+  , rgCacheable = /(?:\/scirpts\/)|(?:\/stylesheets\/)|(?:\/images\/)|(?:\/humans\.txt)/
   , port = process.argv[2] || 3000;
 
 var ONE_DAY = 86400000;
@@ -20,7 +21,16 @@ app.set("view engine", "html");
 app.set("layout", "layout");
 
 app.use(express.compress());
-app.use(express.static(__dirname + "/public", { maxAge: ONE_DAY }));
+
+app.use(function (req, res, next) {
+  if (rgCacheable.test(req.url)) {
+    res.setHeader("Cache-Control", "public, max-age=2592000"); // 1M
+    res.setHeader("Expires", new Date(Date.now() + 2592000000).toUTCString()); 
+  }
+  return next();
+});
+
+app.use(express.static(__dirname + "/public"));
 
 app.get("/", function (req, res) {
   res.render("index", { title : getPageTitle() });
