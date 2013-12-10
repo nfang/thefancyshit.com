@@ -2,7 +2,7 @@ var express = require("express")
   , _ = require("underscore")
   , app = express()
   , db = require("./db.js")
-  , rgCacheable = /(?:\/scripts\/)|(?:\/stylesheets\/)|(?:\/images\/)|(?:\/humans\.txt)/
+  , rgCacheable = /\/scripts\/|\/stylesheets\/|\/images\/|\/humans\.txt/
   , port = process.argv[2] || 3000;
 
 var getPageTitle = function (page) {
