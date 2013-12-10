@@ -2,10 +2,8 @@ var express = require("express")
   , _ = require("underscore")
   , app = express()
   , db = require("./db.js")
-  , rgCacheable = /(?:\/scirpts\/)|(?:\/stylesheets\/)|(?:\/images\/)|(?:\/humans\.txt)/
+  , rgCacheable = /(?:\/scripts\/)|(?:\/stylesheets\/)|(?:\/images\/)|(?:\/humans\.txt)/
   , port = process.argv[2] || 3000;
-
-var ONE_DAY = 86400000;
 
 var getPageTitle = function (page) {
   if (!page || page.length === 0) return "Fancy Sh!t";
