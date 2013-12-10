@@ -4,6 +4,8 @@ var express = require("express")
   , db = require("./db.js")
   , port = process.argv[2] || 3000;
 
+var ONE_DAY = 86400000;
+
 var getPageTitle = function (page) {
   if (!page || page.length === 0) return "Fancy Sh!t";
 
@@ -18,7 +20,7 @@ app.set("view engine", "html");
 app.set("layout", "layout");
 
 app.use(express.compress());
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/public", { maxAge: ONE_DAY }));
 
 app.get("/", function (req, res) {
   res.render("index", { title : getPageTitle() });
