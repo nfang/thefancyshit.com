@@ -168,6 +168,7 @@ ul.nav > li:hover > .sub {
 .centered-container {
   margin: 0 auto;
   width: 960px;
+  overflow: hidden;
 }
 .about, .contact {
   font: normal normal 12px/20px FuturaLight, Helvetica, sans-serif;
@@ -293,4 +294,13 @@ ul.sidebar-list > li > a { color: #666666; }
 .post > .post-footer > .post-meta {
   color: #999999;
   padding: 1.2em 0;
+}
+.postlist > .empty {
+  padding: 0;
+  margin-left: 6em;
+}
+.empty {
+  color: #999999;
+  font: normal normal 16px/16px FuturaLight, Helvetica, sans-serif;
+  padding: 3em 0;
 }
