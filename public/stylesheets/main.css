@@ -117,6 +117,13 @@ ul.nav > li:hover > .sub {
   left: 100px;
   top: 0px;
 }
+.coll-year {
+  *left: 0px;
+  *top: 26px;
+}
+.coll-season { 
+  *margin-top: -11px;
+}
 .coll-year, .coll-season {
   width: 100px;
 }
