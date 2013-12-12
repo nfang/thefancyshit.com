@@ -3,7 +3,7 @@ var express = require("express")
   , app = express()
   , db = require("./db.js")
   , rgCacheable = /\/scripts\/|\/stylesheets\/|\/images\/|\/humans\.txt/
-  , port = process.argv[2] || 3000;
+  , port = process.env.PORT || 3000;
 
 var getPageTitle = function (page) {
   if (!page || page.length === 0) return "Fancy Sh!t";
@@ -95,4 +95,4 @@ app.get("/collection/:year/:season", function (req, res, next) {
 
 app.listen(port);
 
-console.log("Listening on port " + port);
+console.log("Server listening on port " + port + " in " + process.env.NODE_ENV);
