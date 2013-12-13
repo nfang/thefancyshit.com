@@ -6,11 +6,10 @@ require.config({
 });
 
 require([ "jquery", "slider" ], function ($) {
-  var wViewPort = $(window).width();
 
   function rotateKV() {
     var kv = $("#kv")
-      , numOfItems = $("#kv").find("li").length
+      , numOfItems = $("#kv > li").length
       , startOffset = parseFloat(kv.css('left'))
       , endOffset = 0;
 
@@ -19,15 +18,12 @@ require([ "jquery", "slider" ], function ($) {
     }
 
     kv.animate({
-      left: endOffset + 'px'
+      left: endOffset
     }, 1000);
   }
 
   $(function () {
-    init_offset = (wViewPort - 373) / 2;
-
-    $("#carousel").css('left', init_offset)
-      .slider({
+    $("#carousel").slider({
         prevTrigger : '.slide-nav.prev',
         nextTrigger : '.slide-nav.next'
       });

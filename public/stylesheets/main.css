@@ -202,6 +202,8 @@ ul.nav > li:hover > .sub {
 #carousel {
   overflow: hidden;
   position: absolute;
+  left: 50%;
+  margin-left: -185px;
   width: 19999px;
   height: 560px;
 }
