@@ -103,17 +103,25 @@ ul.nav > li:last-child > a {
 }
 .sub {
   background-color: #fdfdfd;
-  display: none;
-  opacity: .95;
-  filter:alpha(opacity=95);
+  opacity: 0;
+  filter:alpha(opacity=0);
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
   position: absolute;
+  left: -9999px;
   z-index: 2000;
 }
+li:hover > .sub {
+  opacity: .95;
+  filter:alpha(opacity=95);
+}
 ul.nav > li:hover > .sub {
-  display: block;
+  left: 0px;
+}
+.sub > li > .sub {
+  left: -9999px;
 }
 .sub > li:hover > .sub {
-  display: block;
   left: 100px;
   top: 0px;
 }
