@@ -103,19 +103,24 @@ ul.nav > li:last-child > a {
 }
 .sub {
   background-color: #fdfdfd;
-  display: none;
-  opacity: .95;
-  filter:alpha(opacity=95);
+  opacity: 0;
+  filter:alpha(opacity=0);
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
   position: absolute;
   z-index: 2000;
 }
 ul.nav > li:hover > .sub {
-  display: block;
+  opacity: .95;
+  filter:alpha(opacity=95);
 }
-.sub > li:hover > .sub {
-  display: block;
+.sub > li > .sub {
   left: 100px;
   top: 0px;
+}
+.sub > li:hover > .sub {
+  opacity: .95;
+  filter:alpha(opacity=95);
 }
 .coll-year {
   *left: 0px;
