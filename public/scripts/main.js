@@ -1,4 +1,11 @@
-(function (fancyshit, $, undefined) {
+require.config({
+  "baseUrl": "/scripts",
+  "paths"  : {
+    "jquery": "//code.jquery.com/jquery-1.10.2.min"
+  }
+});
+
+require([ "jquery", "slider" ], function ($) {
   var wViewPort = $(window).width();
 
   function rotateKV() {
@@ -10,6 +17,7 @@
     if ((startOffset - 960) > -numOfItems * 960) {
       endOffset = startOffset - 960;
     }
+
     kv.animate({
       left: endOffset + 'px'
     }, 1000);
@@ -26,4 +34,4 @@
 
     setInterval(function () { rotateKV() }, 8000);
   });
-} (window.fancyshit || {}, jQuery));
+});

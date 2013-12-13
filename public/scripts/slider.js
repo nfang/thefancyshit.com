@@ -1,5 +1,5 @@
-(function ($) {
-  
+define([ "jquery" ], function ($) {
+
   "use strict";
 
   var Slider = function (el, options) {
@@ -45,4 +45,4 @@
   $.fn.slider = function (options) {
     return new Slider(this, options);
   }
-} (jQuery));
+});
