@@ -115,21 +115,19 @@ li:hover > .sub {
   opacity: .95;
   filter:alpha(opacity=95);
 }
-ul.nav > li:hover > .sub {
+ul.nav > li:hover > .coll-year {
   left: 0px;
 }
-.sub > li > .sub {
-  left: -9999px;
-}
-.sub > li:hover > .sub {
+.coll-year > li:hover > .coll-season {
   left: 100px;
   top: 0px;
 }
 .coll-year {
   *top: 26px;
 }
-.coll-season { 
+.coll-season {
   *margin-top: -11px;
+  left: -9999px;
 }
 .coll-year, .coll-season {
   width: 100px;
@@ -221,7 +219,7 @@ ul.nav > li:hover > .sub {
 }
 #carousel > li.active {
   opacity: 1;
-  filter:alpha(opacity=100);
+  filter:alpha(opacity=100); 
 }
 .slide-nav {
   cursor: pointer;
