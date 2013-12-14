@@ -30,26 +30,26 @@ define([ "jquery" ], function ($) {
 
   Slider.prototype = {
     rotate: function () {
-      var activeItem = this.items.filter('.active')
+      var activeItem  = this.items.filter('.active')
         
-        , nextItem = activeItem.next().length ? 
+        , nextItem    = activeItem.next().length ? 
             activeItem.next() : this.items.eq(0)
         
-        , start = parseFloat(this.$el.css('left'))
+        , startOffset = parseFloat(this.$el.css('left'))
 
-        , end = activeItem.index() < this.items.length - 1 ? 
-            start - (activeItem.width() + nextItem.width()) / 2 :
+        , endOffset   = activeItem.index() < this.items.length - 1 ? 
+            startOffset - (activeItem.width() + nextItem.width()) / 2 :
             0;
 
-      this.$el.animate({ 'left': end }, this.options.duration);
+      this.$el.animate({ 'left': endOffset }, this.options.duration);
       this.items.removeClass('active');
       nextItem.addClass('active');
     },
 
     prev: function () {
       var activeItem = this.items.filter('.active')
-        , prevItem = activeItem.prev()
-        , offset = parseFloat(this.$el.css('left'));
+        , prevItem   = activeItem.prev()
+        , offset     = parseFloat(this.$el.css('left'));
 
       if (activeItem.index() > 0) {
         this.$el.animate({ 
@@ -63,8 +63,8 @@ define([ "jquery" ], function ($) {
 
     next: function () {
       var activeItem = this.items.filter('.active')
-        , nextItem = activeItem.next()
-        , offset = parseFloat(this.$el.css('left'));
+        , nextItem   = activeItem.next()
+        , offset     = parseFloat(this.$el.css('left'));
 
       if (activeItem.index() < this.items.length - 1) {
         this.$el.animate({ 
