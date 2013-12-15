@@ -105,7 +105,6 @@ ul.nav > li:last-child > a {
 .sub {
   background-color: #fdfdfd;
   opacity: 0;
-  filter:alpha(opacity=0);
   transition: opacity .5s;
   -webkit-transition: opacity .5s;
   position: absolute;
@@ -114,7 +113,6 @@ ul.nav > li:last-child > a {
 }
 li:hover > .sub {
   opacity: .95;
-  filter:alpha(opacity=95);
 }
 ul.nav > li:hover > .coll-year {
   left: 0px;
@@ -128,16 +126,17 @@ ul.nav > li:hover > .coll-year {
 }
 .coll-season {
   *margin-top: -11px;
-  left: -9999px;
 }
 .coll-year, .coll-season {
   width: 100px;
+}
+.coll-year > li { 
+  position: relative;
 }
 .coll-year > li, .coll-season > li {
   border-bottom: 1px dotted #666666;
   line-height: 3em;
   padding: 0 1em;
-  position: relative;
 }
 .container img {
   border: 1px solid #aaaaaa;
