@@ -2,7 +2,8 @@
 @font-face {
   font-family: 'FuturaLight';
   src: url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.eot');
-  src: url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.woff') format('woff'), 
+  src: url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.woff') format('woff'), 
        url('/stylesheets/fonts/FuturaLT/futuralt-light-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -10,15 +11,18 @@
 @font-face {
   font-family: 'FuturaBook';
   src: url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.eot');
-  src: url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.woff') format('woff'), 
+  src: url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.woff') format('woff'), 
        url('/stylesheets/fonts/FuturaBook/futuralt-book-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'Megrim';
-  src: url('/stylesheets/fonts/Megrim/Megrim.eot');
-  src: url('/stylesheets/fonts/Megrim/Megrim.woff') format('woff'), url('/stylesheets/fonts/Megrim/Megrim.ttf') format('truetype');
+  src: url('/stylesheets/fonts/Megrim/megrim-webfont.eot');
+  src: url('/stylesheets/fonts/Megrim/megrim-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/stylesheets/fonts/Megrim/megrim-webfont.woff') format('woff'), 
+       url('/stylesheets/fonts/Megrim/megrim-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -109,15 +113,19 @@ ul.nav > li:last-child > a {
   -webkit-transition: opacity .5s;
   position: absolute;
   left: -9999px;
+  *left: 0px;
+  *visibility: hidden;
   z-index: 2000;
 }
 li:hover > .sub {
   opacity: .95;
 }
 ul.nav > li:hover > .coll-year {
+  *visibility: visible;
   left: 0px;
 }
 .coll-year > li:hover > .coll-season {
+  *visibility: visible;
   left: 100px;
   top: 0px;
 }
@@ -125,7 +133,7 @@ ul.nav > li:hover > .coll-year {
   *top: 26px;
 }
 .coll-season {
-  *margin-top: -11px;
+  *margin-top: -12px;
 }
 .coll-year, .coll-season {
   width: 100px;
