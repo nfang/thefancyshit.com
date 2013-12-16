@@ -1,3 +1,13 @@
+/** @license MIT License (c) copyright 2013 Guozhen Nathan Fang */
+
+/**
+ * slider.js
+ *
+ * Simple and styleless jQuery slider plugin
+ *
+ * @author Guozhen Nathan Fang <nyyrikkifang@gmail.com>
+ */
+
 define([ "jquery" ], function ($) {
 
   "use strict";
@@ -29,6 +39,9 @@ define([ "jquery" ], function ($) {
   }
 
   Slider.prototype = {
+    
+    constructor: Slider,
+
     rotate: function () {
       var activeItem  = this.items.filter('.active')
         
