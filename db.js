@@ -47,7 +47,38 @@ lookbook["2013"] = {
     "/images/collections/2013/summer/04.jpg"
   ],
   "autumn" : [],
-  "winter" : []
+  "winter" : [
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-001.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-002.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-003.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-004.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-005.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-006.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-007.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-008.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-009.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-010.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-011.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-012.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-013.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-014.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-015.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-016.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-017.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-018.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-019.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-020.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-021.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-022.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-023.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-024.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-025.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-026.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-027.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-028.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-029.jpg",
+    "/images/collections/2013/winter/fancyshit-lookbook14winter-030.jpg"
+  ]
 };
 
 var posts = exports.posts = [
