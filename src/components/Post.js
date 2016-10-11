@@ -5,6 +5,7 @@ import './Post.css';
 class Post extends Component {
   render() {
     const { post } = this.props;
+    const postText = post.text.length ? <p>{post.text}</p> : '';
     return (
       <div className="Post">
         <header className="Post-header">
@@ -12,8 +13,10 @@ class Post extends Component {
           <span className="Post-title">{post.title}</span>
         </header>
         <section className="Post-content">
+          {postText}
           {post.images.map(item =>
-            <img key={item.id} src={item.src} alt={item.name} />)}
+            <img key={item.id} src={item.src} alt={item.name} />
+          )}
         </section>
         <footer className="Post-footer">
           <div className="Post-inquiry">
