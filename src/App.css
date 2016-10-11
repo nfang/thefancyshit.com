@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+}
+
+.App-title {
+  border-bottom: 1px solid #aaa;
+  padding: 1.5rem 0;
+}
+
+.App-slogan {
+  font-family: 'Futura Light', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: .8rem;
+  letter-spacing: .15rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.App-footer {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: .6rem;
+  line-height: 1rem;
+  margin: 1.5rem auto;
+}

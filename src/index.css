@@ -1,0 +1,54 @@
+@import '../node_modules/reset.css/reset.css';
+
+@font-face {
+  font-family: 'Futura Light';
+  src: url('/fonts/FuturaLT/futuralt-light-webfont.eot');
+  src: url('/fonts/FuturaLT/futuralt-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/FuturaLT/futuralt-light-webfont.woff') format('woff'),
+       url('/fonts/FuturaLT/futuralt-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura Book';
+  src: url('/fonts/FuturaBook/futuralt-book-webfont.eot');
+  src: url('/fonts/FuturaBook/futuralt-book-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/FuturaBook/futuralt-book-webfont.woff') format('woff'),
+       url('/fonts/FuturaBook/futuralt-book-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Megrim';
+  src: url('/fonts/Megrim/megrim-webfont.eot');
+  src: url('/fonts/Megrim/megrim-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/Megrim/megrim-webfont.woff') format('woff'),
+       url('/fonts/Megrim/megrim-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Futura Book', Verdana, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  vertical-align: top;
+  margin-right: .25rem;
+}

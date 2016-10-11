@@ -1,0 +1,33 @@
+.Navbar {
+  font-family: 'Futura Light', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: .8rem;
+  padding: 1rem 0;
+}
+
+.Navbar a {
+  letter-spacing: .15rem;
+  text-decoration: none;
+}
+
+.Navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  width: 960px;
+}
+
+.Navbar-nav li {
+  box-sizing: border-box;
+  text-align: center;
+  width: 20%;
+}
+
+.Navbar-nav li:first-child {
+  text-align: left;
+}
+
+.Navbar-nav li:last-child {
+  text-align: right;
+}

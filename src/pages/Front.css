@@ -1,0 +1,12 @@
+.Front {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 960px;
+}
+
+.Front-visualContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  transition: transform 1s cubic-bezier(0.4, 0.0, 0.6, 1);
+}

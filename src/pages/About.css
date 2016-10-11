@@ -1,0 +1,30 @@
+.About {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.About-header {
+  width: 100%;
+}
+
+.About-section {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.About-section + .About-section {
+  border-top: 1px dotted #777;
+}
+
+.About-section > h1 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: .25rem;
+  line-height: 3;
+}
+
+.About-section > p, .About-section > address {
+  font-family: 'Futura Light', 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: .8rem;
+  line-height: 1.5;
+}
