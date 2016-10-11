@@ -1,6 +1,6 @@
 .Front {
   margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
   width: 960px;
 }
 

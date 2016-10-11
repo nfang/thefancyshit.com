@@ -9,31 +9,52 @@ class Press extends Component {
   constructor() {
     super();
     this.state = {
-      posts: AppStore.fetchPosts()
+      posts: AppStore.fetchPosts(),
+      categories: AppStore.fetchCategories()
     };
   }
 
-  get categories() {
-    const { posts } = this.state;
-    return posts
-      .map(item => item.category)
-      .filter((item, index, self) => self.indexOf(item) === index);
+  get categoryLinks() {
+    return (
+      <ul>{this.state.categories.map((category, id) =>
+        <li key={'cat_' + id}>
+          <Link to={{
+            'pathname': '/press',
+            'query': { 'category': category.toLowerCase() }
+          }}>{category.toUpperCase()}</Link>
+        </li>)}
+      </ul>
+    );
   }
 
-  get archives() {
-    const { posts } = this.state;
-    const archiveLinks = [];
-    posts.forEach(item => {
+  get archiveLinks() {
+    let archiveLinks = [];
+
+    this.state.posts.forEach(item => {
       const date = moment(item.createdAt);
+
       let link = {
+        date,
         href: `/press/${date.format('YYYY')}/${date.format('MM')}`,
-        label: date.format('MMM YYYY')
+        label: date.format('MMMM YYYY')
       };
+
       if (!archiveLinks.filter(item => item.href === link.href).length) {
         archiveLinks.push(link);
       }
     });
-    return archiveLinks;
+
+    archiveLinks = archiveLinks.sort((a, b) => {
+      return a.date.isBefore(b.date);
+    });
+
+    return (
+      <ul>{archiveLinks.map((item, id) =>
+        <li key={'arc_' + id}>
+          <Link to={item.href}>{item.label.toUpperCase()}</Link>
+        </li>)}
+      </ul>
+    );
   }
 
   get posts() {
@@ -64,19 +85,11 @@ class Press extends Component {
         <aside className="Press-sidebar">
           <section className="Press-sidebarItem">
             <h2>CATEGORIES</h2>
-            <ul>
-              {this.categories.map((item, i) =>
-                <li key={'cat_' + i}>{item.toUpperCase()}</li>)}
-            </ul>
+            {this.categoryLinks}
           </section>
           <section className="Press-sidebarItem">
             <h2>ARCHIVES</h2>
-            <ul>
-              {this.archives.map((item, i) =>
-                <li key={'arc_' + i}>
-                  <Link to={item.href}>{item.label.toUpperCase()}</Link>
-                </li>)}
-            </ul>
+            {this.archiveLinks}
           </section>
         </aside>
         <div className="Press-posts">
