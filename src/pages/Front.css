@@ -1,7 +1,7 @@
 .Front {
   margin: 0 auto;
   overflow: hidden;
-  width: 960px;
+  max-width: 960px;
 }
 
 .Front-visualContainer {

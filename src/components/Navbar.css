@@ -1,7 +1,6 @@
 .Navbar {
   font-family: 'Futura Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: .8rem;
-  padding: 1rem 0;
 }
 
 .Navbar a {
@@ -15,11 +14,13 @@
   justify-content: space-between;
   align-items: baseline;
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 }
 
 .Navbar-nav li {
   box-sizing: border-box;
+  line-height: 1.2;
+  padding: 1rem 0;
   text-align: center;
   width: 20%;
 }

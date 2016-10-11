@@ -19,9 +19,11 @@ class Press extends Component {
       <ul>{this.state.categories.map((category, id) =>
         <li key={'cat_' + id}>
           <Link to={{
-            'pathname': '/press',
-            'query': { 'category': category.toLowerCase() }
-          }}>{category.toUpperCase()}</Link>
+              'pathname': '/press',
+              'query': { 'category': category.toLowerCase() }
+            }} className="Press-sidebarLink" activeClassName="active">
+            {category.toUpperCase()}
+          </Link>
         </li>)}
       </ul>
     );
@@ -51,7 +53,9 @@ class Press extends Component {
     return (
       <ul>{archiveLinks.map((item, id) =>
         <li key={'arc_' + id}>
-          <Link to={item.href}>{item.label.toUpperCase()}</Link>
+          <Link to={item.href} className="Press-sidebarLink" activeClassName="active">
+            {item.label.toUpperCase()}
+          </Link>
         </li>)}
       </ul>
     );

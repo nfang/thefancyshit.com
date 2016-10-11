@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   align-items: flex-start;
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 }
 
 .Press-header {
@@ -13,10 +13,10 @@
 }
 
 .Press-pageTitle {
-  padding: 1.5rem 0 1.5rem;
+  padding: 1.5rem 0;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: .25rem;
+  letter-spacing: .15rem;
 }
 
 .Press-sidebar {
@@ -28,7 +28,7 @@
 }
 
 .Press-sidebarItem > h2 {
-  font-family: 'Futura Light', 'Helvetica Neue', sans-serif;
+  font-family: inherit;
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1rem;
@@ -41,6 +41,10 @@
 .Press-sidebarItem li {
   line-height: 2;
   padding-left: .8rem;
+}
+
+.Press-sidebarLink.active {
+  border-bottom: 1px dashed #aaa;
 }
 
 .Press-posts {
