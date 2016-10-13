@@ -138,5 +138,28 @@ export const IN_MEMORY_DB = {
       'text': '',
       'title': 'Time Out Shanghai 2012年10月刊'
     }
+  ],
+  'collection': [
+    {
+      'id': uuid.v4(),
+      'photo': '/assets/collection/fancyshit-lookbook14winter-001.jpg',
+      'season': 'spring',
+      'title': '',
+      'year': '2013'
+    },
+    {
+      'id': uuid.v4(),
+      'photo': '/assets/collection/fancyshit-lookbook14winter-002.jpg',
+      'season': 'summer',
+      'title': '',
+      'year': '2013'
+    },
+    {
+      'id': uuid.v4(),
+      'photo': '/assets/collection/fancyshit-lookbook14winter-003.jpg',
+      'season': 'winter',
+      'title': '',
+      'year': '2013'
+    },
   ]
 };

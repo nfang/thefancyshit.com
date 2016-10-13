@@ -1,6 +1,7 @@
 import { EventEmitter } from 'events';
 import { IN_MEMORY_DB } from './database';
 import moment from 'moment';
+import _ from 'underscore';
 
 class AppStore extends EventEmitter {
 
@@ -16,10 +17,20 @@ class AppStore extends EventEmitter {
   }
 
   fetchCategories() {
-    return IN_MEMORY_DB.posts
-      .map(item => item.category)
-      .filter((item, index, self) => self.indexOf(item) === index)
-      .sort();
+    const categories = _.pluck(IN_MEMORY_DB.posts, 'category').sort();
+    return _.uniq(categories);
+  }
+
+  fetchCollection() {
+    return IN_MEMORY_DB.collection.sort((a, b) => a.year < b.year);
+  }
+
+  getYearSeasons() {
+    let yearSeasons = IN_MEMORY_DB.collection.map(item => {
+      return { year: item.year, season: item.season };
+    });
+    yearSeasons = _.uniq(yearSeasons, true, a => a.year + a.season);
+    return _.groupBy(yearSeasons, 'year');
   }
 }
 

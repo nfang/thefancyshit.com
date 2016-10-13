@@ -1,3 +1,3 @@
 # thefancyshit.com
 
-FANCY SHIT is a young and independent fashion brand based in Shanghai, China.
+FANCY SH!T is a young and independent fashion brand based in Shanghai, China.

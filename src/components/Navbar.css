@@ -17,7 +17,7 @@
   max-width: 960px;
 }
 
-.Navbar-nav li {
+.Navbar-navItem {
   box-sizing: border-box;
   line-height: 1.2;
   padding: 1rem 0;
@@ -25,10 +25,14 @@
   width: 20%;
 }
 
-.Navbar-nav li:first-child {
+.Navbar-navItem:first-child {
   text-align: left;
 }
 
-.Navbar-nav li:last-child {
+.Navbar-navItem:last-child {
   text-align: right;
+}
+
+.Menu-items {
+  width: 6rem;
 }
