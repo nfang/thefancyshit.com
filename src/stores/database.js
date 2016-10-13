@@ -156,6 +156,20 @@ export const IN_MEMORY_DB = {
     },
     {
       'id': uuid.v4(),
+      'photo': '/assets/collection/fancyshit-lookbook14winter-002.jpg',
+      'season': 'summer',
+      'title': '',
+      'year': '2013'
+    },
+    {
+      'id': uuid.v4(),
+      'photo': '/assets/collection/fancyshit-lookbook14winter-002.jpg',
+      'season': 'summer',
+      'title': '',
+      'year': '2013'
+    },
+    {
+      'id': uuid.v4(),
       'photo': '/assets/collection/fancyshit-lookbook14winter-003.jpg',
       'season': 'winter',
       'title': '',

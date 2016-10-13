@@ -1,7 +1,7 @@
 import { EventEmitter } from 'events';
 import { IN_MEMORY_DB } from './database';
 import moment from 'moment';
-import _ from 'underscore';
+import _ from 'lodash';
 
 class AppStore extends EventEmitter {
 
@@ -17,7 +17,7 @@ class AppStore extends EventEmitter {
   }
 
   fetchCategories() {
-    const categories = _.pluck(IN_MEMORY_DB.posts, 'category').sort();
+    const categories = IN_MEMORY_DB.posts.map(item => item.category).sort();
     return _.uniq(categories);
   }
 
@@ -29,7 +29,7 @@ class AppStore extends EventEmitter {
     let yearSeasons = IN_MEMORY_DB.collection.map(item => {
       return { year: item.year, season: item.season };
     });
-    yearSeasons = _.uniq(yearSeasons, true, a => a.year + a.season);
+    yearSeasons = _.uniqBy(yearSeasons, a => a.year + a.season);
     return _.groupBy(yearSeasons, 'year');
   }
 }

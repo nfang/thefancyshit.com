@@ -46,6 +46,20 @@ class MenuItem extends Component {
   }
 }
 
+/**
+ * Menu data format:
+ * {
+ *   label: 'COLLECTION',
+ *   children: [
+ *     {
+ *       label: '2013',
+ *       children: [
+ *         { label: 'Spring', link: '/collection/2013/spring' }, ...
+ *       ]
+ *     }, ...
+ *   ]
+ * }
+ */
 class Menu extends Component {
   constructor() {
     super();

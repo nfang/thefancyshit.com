@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import _ from 'lodash';
 import AppStore from '../stores/AppStore';
 import Menu from './Menu';
 import './Navbar.css';
@@ -8,40 +9,32 @@ class Navbar extends Component {
   constructor() {
     super();
     this.yearAndSeasons = AppStore.getYearSeasons();
-    this.years = Object.keys(this.yearAndSeasons).sort((a, b) => a < b);
-    console.log(this.yearAndSeasons);
   }
 
-  genMenu() {
+  createMenu(title) {
+    const menu = { label: title, children: [] };
+
+    Object.keys(this.yearAndSeasons).forEach((year) => {
+      menu.children.push({
+        label: year,
+        children: this.yearAndSeasons[year].map(item => {
+          return {
+            label: _.capitalize(item.season),
+            link: `/collection/${item.year}/${item.season}`.toLowerCase()
+          };
+        })
+      });
+    });
+    return menu;
   }
 
   render() {
-    const demoMenu = {
-      label: 'COLLECTION',
-      children: [
-        {
-          label: '2013',
-          children: [
-            { label: 'Spring', link: '/collection/2013/spring' },
-            { label: 'Summer', link: '/collection/2013/summer' },
-            { label: 'Winter', link: '/collection/2013/winter' }
-          ]
-        },
-        {
-          label: '2012',
-          children: [
-            { label: 'Spring', link: '/collection/2012/spring' },
-            { label: 'Summer', link: '/collection/2012/summer' },
-            { label: 'Winter', link: '/collection/2012/winter' }
-          ]
-        }
-      ]
-    }
+    const menu = this.createMenu('COLLECTION');
     return (
       <nav className="Navbar">
         <ul className="Navbar-nav">
           <li className="Navbar-navItem">
-            <Menu menu={demoMenu} />
+            <Menu menu={menu} />
           </li>
           <li className="Navbar-navItem">
             <a href="http://thefancyshit.taobao.com" target="_blank">ONLINE STORE</a>
