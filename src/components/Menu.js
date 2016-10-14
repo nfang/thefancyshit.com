@@ -63,15 +63,27 @@ class MenuItem extends Component {
 class Menu extends Component {
   constructor() {
     super();
-    this.state = { expanded: false };
+    this.state = { 'expanded': false };
+    this.handleDocumentClick = (e) => {
+      if(!this.menuEl.contains(e.target)) {
+        this.close();
+      }
+    }
   }
 
   componentDidMount() {
-    document.addEventListener('click', (e) => {
-    });
+    document.addEventListener('click', this.handleDocumentClick);
   }
 
-  toggle() {
+  componentWillUnmount() {
+    document.removeEventListener('click', this.handleDocumentClick);
+  }
+
+  close() {
+    this.setState({ 'expanded': false })
+  }
+
+  toggle(e) {
     this.setState({ 'expanded': !this.state.expanded });
   }
 
@@ -88,7 +100,7 @@ class Menu extends Component {
       'expanded': this.state.expanded
     });
     return (
-      <div className="Menu" ref={(ref) => this.menuElement = ref}>
+      <div className="Menu" ref={(ref) => this.menuEl = ref}>
         <a onClick={this.toggle.bind(this)}>{menu.label}</a>
         <ul className={menuClassNames}>{menuItems}</ul>
       </div>
