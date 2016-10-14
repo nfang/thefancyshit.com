@@ -25,6 +25,8 @@ class Navbar extends Component {
         })
       });
     });
+
+    menu.children = _.orderBy(menu.children, ['label'], ['desc']);
     return menu;
   }
 

@@ -66,6 +66,11 @@ class Menu extends Component {
     this.state = { expanded: false };
   }
 
+  componentDidMount() {
+    document.addEventListener('click', (e) => {
+    });
+  }
+
   toggle() {
     this.setState({ 'expanded': !this.state.expanded });
   }
@@ -83,7 +88,7 @@ class Menu extends Component {
       'expanded': this.state.expanded
     });
     return (
-      <div className="Menu">
+      <div className="Menu" ref={(ref) => this.menuElement = ref}>
         <a onClick={this.toggle.bind(this)}>{menu.label}</a>
         <ul className={menuClassNames}>{menuItems}</ul>
       </div>
