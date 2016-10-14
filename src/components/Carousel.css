@@ -1,0 +1,70 @@
+.Carousel {
+  position: relative;
+}
+
+.Carousel-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  height: 560px;
+  width: 100%;
+}
+
+.Carousel-nav {
+  background: rgba(255,255,255,0);
+  border: none;
+  color: #e4e4e4;
+  cursor: pointer;
+  font-family: Megrim, cursive;
+  font-size: 3rem;
+  font-weight: 100;
+  height: 100%;
+  outline: none;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  transition: background .2s linear, color .2s linear;
+  width: 7.5rem;
+  z-index: 100;
+}
+
+.Carousel-nav:hover {
+  background: rgba(204,204,204,.15);
+  color: #aaa;
+}
+
+.Carousel-nav--left {
+  left: 0;
+}
+
+.Carousel-nav--right {
+  right: 0;
+}
+
+.Carousel-cover {
+  background: rgba(255,255,255,.75);
+  flex-grow: 1;
+  height: 100%;
+}
+
+.Carousel-slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  transition: transform .5s ease-out;
+  z-index: -1;
+}
+
+.Carousel-slides li {
+  height: 100%;
+  width: 376px;
+}
+
+.Carousel-inner {
+  position: relative;
+  height: 100%;
+  width: 376px;
+}

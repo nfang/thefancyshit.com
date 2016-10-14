@@ -1,6 +1,7 @@
 .Menu {
   cursor: pointer;
   position: relative;
+  user-select: none;
 }
 
 .Menu-items {

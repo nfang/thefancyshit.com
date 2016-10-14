@@ -21,8 +21,16 @@ class AppStore extends EventEmitter {
     return _.uniq(categories);
   }
 
-  fetchCollection() {
-    return IN_MEMORY_DB.collection.sort((a, b) => a.year < b.year);
+  fetchCollection(year, season) {
+    let collection = IN_MEMORY_DB.collection;
+    if (year) {
+      collection = collection.filter(item => item.year === year);
+    }
+    if (season) {
+      collection = collection.filter(item =>
+        item.season.toLowerCase() === season.toLowerCase());
+    }
+    return collection.sort((a, b) => a.year < b.year);
   }
 
   getYearSeasons() {

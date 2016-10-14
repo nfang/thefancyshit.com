@@ -13,7 +13,7 @@ ReactDOM.render(
     <Route path='/' component={App}>
       <IndexRoute component={Front} />
       <Route path='about' component={About} />
-      <Route path='collection(/:year/:season)' component={Collection} />
+      <Route path='collection(/:year(/:season))' component={Collection} />
       <Route path='press(/:year/:month)' component={Press} />
     </Route>
   </Router>,
