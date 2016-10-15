@@ -47,7 +47,8 @@ export const IN_MEMORY_DB = {
         {
           'id': uuid.v4(),
           'name': '2013.03.27.1626',
-          'src': '/assets/press/2013.03.27.1626s.jpg'
+          'src': '/assets/press/2013.03.27.1626s.jpg',
+          'large': '/assets/press/2013.03.27.1626.jpg'
         }
       ],
       'text': '',

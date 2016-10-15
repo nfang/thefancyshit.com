@@ -1,0 +1,33 @@
+.Viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0,0,0,.8);
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.Viewer.reveal {
+  display: block;
+}
+
+.Viewer-close {
+  position: absolute;
+  top: 0;
+  right: 2.5rem;
+  color: #fff;
+  font-family: Megrim, cursive;
+  font-size: 5rem;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.Viewer-close:hover {
+  color: #e4e4e4;
+}
+
+.Viewer-content > img {
+  width: 80%;
+}

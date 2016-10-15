@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
 import Post from '../components/Post';
+import Viewer from '../components/Viewer';
 import AppStore from '../stores/AppStore';
 import './Press.css';
 
@@ -79,9 +80,15 @@ class Press extends Component {
     return posts;
   }
 
+  loadImageViewer(image) {
+    console.log(image);
+    this.viewer.show(<img src={image} alt="" />);
+  }
+
   render() {
     return (
       <div className="Press">
+        <Viewer ref={(ref) => this.viewer = ref} />
         <header className="Press-header">
           <img src="/assets/banner-press.jpg" alt="banner for press page" />
           <h1 className="Press-pageTitle">PRESS</h1>
@@ -97,7 +104,9 @@ class Press extends Component {
           </section>
         </aside>
         <div className="Press-posts">
-          {this.posts.map((item, i) => <Post key={'post_' + i} post={item} />)}
+          {this.posts.map((item, i) =>
+            <Post key={'post_' + i} post={item}
+              enlargeImage={this.loadImageViewer.bind(this)} />)}
         </div>
       </div>
     );

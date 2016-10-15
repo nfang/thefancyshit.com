@@ -14,8 +14,13 @@ class Post extends Component {
         </header>
         <section className="Post-content">
           {postTextEl}
-          {post.images.map(item =>
-            <img key={item.id} src={item.src} alt={item.name} />
+          {post.images.map(item => {
+            if (item.large) {
+              return <img key={item.id} src={item.src} alt={item.name}
+                onClick={this.props.enlargeImage.bind(this, item.large)} />;
+            }
+            return <img key={item.id} src={item.src} alt={item.name} />;
+          }
           )}
         </section>
         <footer className="Post-footer">
