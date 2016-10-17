@@ -81,7 +81,6 @@ class Press extends Component {
   }
 
   loadImageViewer(image) {
-    console.log(image);
     this.viewer.show(<img src={image} alt="" />);
   }
 

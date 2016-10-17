@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
+import AppStore from '../stores/AppStore';
 import './Front.css';
 
 const SWAY_INTERVAL = 8000;
@@ -7,19 +8,7 @@ const SWAY_INTERVAL = 8000;
 class Front extends Component {
   constructor() {
     super();
-    this.visuals = [
-      {
-        'id': uuid.v4(),
-        'src': 'assets/visuals/2014-FEB-01.jpg',
-        'title': '2014 February 01'
-      },
-      {
-        'id': uuid.v4(),
-        'src': 'assets/visuals/2014-FEB-02.jpg',
-        'title': '2014 February 02'
-      }
-    ];
-
+    this.visuals = AppStore.fetchKeyVisuals();
     this.state = {
       currentIndex: 0,
       direction: 'normal'

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router';
+import React, {Component} from 'react';
+import {Link} from 'react-router';
 import _ from 'lodash';
 import AppStore from '../stores/AppStore';
 import Menu from './Menu';
@@ -12,7 +12,10 @@ class Navbar extends Component {
   }
 
   createMenu(title) {
-    const menu = { label: title, children: [] };
+    const menu = {
+      label: title,
+      children: []
+    };
 
     Object.keys(this.yearAndSeasons).forEach((year) => {
       menu.children.push({
@@ -31,18 +34,21 @@ class Navbar extends Component {
   }
 
   render() {
-    const menu = this.createMenu('COLLECTION');
     return (
       <nav className="Navbar">
         <ul className="Navbar-nav">
           <li className="Navbar-navItem">
-            <Menu menu={menu} />
+            <Menu menu={this.createMenu('COLLECTION')}/>
           </li>
           <li className="Navbar-navItem">
             <a href="http://thefancyshit.taobao.com" target="_blank">ONLINE STORE</a>
           </li>
-          <li className="Navbar-navItem"><Link to="/about">ABOUT</Link></li>
-          <li className="Navbar-navItem"><Link to="/press">PRESS</Link></li>
+          <li className="Navbar-navItem">
+            <Link to="/about">ABOUT</Link>
+          </li>
+          <li className="Navbar-navItem">
+            <Link to="/press">PRESS</Link>
+          </li>
           <li className="Navbar-navItem">
             <a href="http://weibo.com/fancyshit" target="_blank">BLOG</a>
           </li>

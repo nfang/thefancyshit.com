@@ -5,7 +5,7 @@ import _ from 'lodash';
 
 class AppStore extends EventEmitter {
 
-  getKeyVisuals() {
+  fetchKeyVisuals() {
     return IN_MEMORY_DB.visuals;
   }
 

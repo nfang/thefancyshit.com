@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import moment from 'moment';
 import './Post.css';
 
 class Post extends Component {
   render() {
-    const { post } = this.props;
-    const postTextEl = post.text.length ? <p>{post.text}</p> : '';
+    const {post, enlargeImage} = this.props;
+    const postTextEl = post.text.length
+      ? <p>{post.text}</p>
+      : '';
     return (
       <div className="Post">
         <header className="Post-header">
@@ -16,12 +18,10 @@ class Post extends Component {
           {postTextEl}
           {post.images.map(item => {
             if (item.large) {
-              return <img key={item.id} src={item.src} alt={item.name}
-                onClick={this.props.enlargeImage.bind(this, item.large)} />;
+              return <img key={item.id} src={item.src} alt={item.name} onClick={enlargeImage.bind(this, item.large)}/>;
             }
-            return <img key={item.id} src={item.src} alt={item.name} />;
-          }
-          )}
+            return <img key={item.id} src={item.src} alt={item.name}/>;
+          })}
         </section>
         <footer className="Post-footer">
           <div className="Post-inquiry">
@@ -30,7 +30,8 @@ class Post extends Component {
           </div>
           <div className="Post-meta">
             <span className="Post-date">
-              {moment(post.createdAt).format('YYYY.MM.DD')} Press Info
+              {moment(post.createdAt).format('YYYY.MM.DD')}
+              Press Info
             </span>
           </div>
         </footer>
