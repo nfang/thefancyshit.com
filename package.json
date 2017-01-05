@@ -21,5 +21,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://nfang.github.io/thefancyshit.com"
+  "homepage": "http://thefancyshit.com"
 }
