@@ -31,7 +31,7 @@ class Post extends Component {
           <div className="Post-meta">
             <span className="Post-date">
               {moment(post.createdAt).format('YYYY.MM.DD')}
-              Press Info
+              &nbsp;Press Info
             </span>
           </div>
         </footer>
