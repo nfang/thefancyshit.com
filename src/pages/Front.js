@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import uuid from 'uuid';
 import AppStore from '../stores/AppStore';
 import './Front.css';
 
