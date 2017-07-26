@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 
 class App extends Component {
   render() {
+    const year = (new Date()).getFullYear();
     return (
       <div className="App">
         <header className="App-header">
@@ -18,7 +19,7 @@ class App extends Component {
         </header>
         {this.props.children}
         <footer className="App-footer">
-          <p>COPYRIGHT © 2013-2016 FANCY SHIT ALL RIGHTS RESERVED.</p>
+          <p>COPYRIGHT © 2013-{year} FANCY SHIT ALL RIGHTS RESERVED.</p>
           <p>
             <img className="icon" src="/assets/weibo-16x16.png" alt="weibo icon" />
             <a className="weibo" href="http://weibo.com/fancyshit" target="_blank">
