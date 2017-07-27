@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { NavLink } from 'react-router-dom';
+import qs from 'query-string';
 import moment from 'moment';
 import Post from '../components/Post';
 import Viewer from '../components/Viewer';
@@ -19,12 +20,12 @@ class Press extends Component {
     return (
       <ul>{this.state.categories.map((category, id) =>
         <li key={'cat_' + id}>
-          <Link to={{
+          <NavLink to={{
               'pathname': '/press',
-              'query': { 'category': category.toLowerCase() }
+              'search': `?category=${category.toLowerCase()}`
             }} className="Press-sidebarLink" activeClassName="active">
             {category.toUpperCase()}
-          </Link>
+          </NavLink>
         </li>)}
       </ul>
     );
@@ -54,17 +55,17 @@ class Press extends Component {
     return (
       <ul>{archiveLinks.map((item, id) =>
         <li key={'arc_' + id}>
-          <Link to={item.href} className="Press-sidebarLink" activeClassName="active">
+          <NavLink to={item.href} className="Press-sidebarLink" activeClassName="active">
             {item.label.toUpperCase()}
-          </Link>
+          </NavLink>
         </li>)}
       </ul>
     );
   }
 
   get posts() {
-    const { year, month } = this.props.params;
-    const { category } = this.props.location.query;
+    const { year, month } = this.props.match.params;
+    const { category } = qs.parse(this.props.location.search);
     let { posts } = this.state;
 
     if (year && month) {

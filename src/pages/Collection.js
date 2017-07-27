@@ -6,7 +6,7 @@ import './Collection.css';
 class Collection extends Component {
 
   get collection() {
-    const { year, season } = this.props.params;
+    const { year, season } = this.props.match.params;
     return AppStore.fetchCollection(year, season);
   }
 

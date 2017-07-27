@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 import classNames from 'classnames';
 import './Menu.css';
 
@@ -90,7 +90,7 @@ class Menu extends Component {
   render() {
     const {menu} = this.props;
     const menuItems = menu.children.map(item => {
-      return <MenuItem key={'mi-' + (itemKey++)} label={item.label} link={item.link} children={item.children}/>
+      return <MenuItem key={'mi-' + (itemKey++)} label={item.label} link={item.link || ""} children={item.children}/>
     });
     const menuClassNames = classNames('Menu-items', {'expanded': this.state.expanded});
     return (

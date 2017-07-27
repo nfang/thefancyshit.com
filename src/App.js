@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import './App.css';
+import {
+  Route,
+  Link
+} from 'react-router-dom';
 import Navbar from './components/Navbar';
+import About from './pages/About';
+import Front from './pages/Front';
+import Press from './pages/Press';
+import Collection from './pages/Collection';
+
+import './App.css';
 
 class App extends Component {
   render() {
@@ -17,12 +25,16 @@ class App extends Component {
           </section>
           <Navbar></Navbar>
         </header>
-        {this.props.children}
+        <Route exact path="/" component={Front} />
+        <Route path="/about" component={About} />
+        <Route path="/collection/:year?/:season?" component={Collection} />
+        <Route path="/press/:year?/:month?" component={Press} />
         <footer className="App-footer">
           <p>COPYRIGHT © 2013-{year} FANCY SHIT ALL RIGHTS RESERVED.</p>
           <p>
             <img className="icon" src="/assets/weibo-16x16.png" alt="weibo icon" />
-            <a className="weibo" href="http://weibo.com/fancyshit" target="_blank">
+            <a className="weibo" href="http://weibo.com/fancyshit" 
+              target="_blank" rel="noopener noreferrer">
               http://weibo.com/fancyshit
             </a>
           </p>

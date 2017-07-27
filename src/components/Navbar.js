@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router';
+import {Link} from 'react-router-dom';
 import _ from 'lodash';
 import AppStore from '../stores/AppStore';
 import Menu from './Menu';
@@ -41,7 +41,7 @@ class Navbar extends Component {
             <Menu menu={this.createMenu('COLLECTION')}/>
           </li>
           <li className="Navbar-navItem">
-            <a href="http://thefancyshit.taobao.com" target="_blank">ONLINE STORE</a>
+            <a href="http://thefancyshit.taobao.com" target="_blank" rel="noopener noreferrer">ONLINE STORE</a>
           </li>
           <li className="Navbar-navItem">
             <Link to="/about">ABOUT</Link>
@@ -50,7 +50,7 @@ class Navbar extends Component {
             <Link to="/press">PRESS</Link>
           </li>
           <li className="Navbar-navItem">
-            <a href="http://weibo.com/fancyshit" target="_blank">BLOG</a>
+            <a href="http://weibo.com/fancyshit" target="_blank" rel="noopener noreferrer">BLOG</a>
           </li>
         </ul>
       </nav>
